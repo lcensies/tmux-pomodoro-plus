@@ -74,7 +74,7 @@ send_notification() {
 		linux* | *bsd*)
 			notify-send -t 8000 "$title" "$message"
 			if [[ "$sound" == "on" ]]; then
-				beep -D 1500
+			  play ~/Music/alarm-clock-short.mp3 2>/dev/null
 			fi
 			;;
 		darwin*)

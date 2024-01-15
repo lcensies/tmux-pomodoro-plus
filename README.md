@@ -103,6 +103,17 @@ set -g @pomodoro_granularity 'off'             # Enables MM:SS (ex: 00:10) forma
 
 It's possible to configure the timings from built-in menus within the app:
 
+
+### Sound alarm
+
+Prerequisites: `sox` package. See this guide for details: [Installing the sox Package](https://www.baeldung.com/linux/pc-speaker-beep-in-linux).
+
+Sound alarm is activated when `pomodoro_sound` is set to `on`
+
+
+- By default `play ~/Music/alarm-clock-short.mp3 2>/dev/null` is invoked for sound alarm. 
+    - [ ] TODO: parametrize sound command
+
 ### Customising the status line
 
 The output from the plugin can be customised to fit in with your statusline:
